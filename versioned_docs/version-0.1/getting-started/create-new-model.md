@@ -6,7 +6,7 @@ sidebar_label: Create new model
 
 This guide assumes that you know about the IFC standard. If not, you can find informations in the offial documentation [here](https://ifc43-docs.standards.buildingsmart.org/).
 
-You can donwload the sample grassopper definition used in this guide [here](@site/static/files/Hopper Script.gh), and the sample output file [here](@site/static/files/Hopper File.ifc).
+You can donwload the sample grassopper definition used in this guide [here](https://ifchoppershell.github.io/grasshopper-documentation/files/Hopper Script.gh), and the sample output file [here](https://ifchoppershell.github.io/grasshopper-documentation/files/Hopper File.ifc).
 
 ## Initialize empy file
 The fisrt step is to create a new empty model with the **Ifc Model** component. Default inputs will result in an IFC4 file. Feed the model to the **Ifc Write** component to save it. By default it is stored in a IfcHopperShell folder in your user directory.
