@@ -1,0 +1,29 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main] # Change this if your default branch is different
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: yarn # or npm/pnpm
+
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+      
+      - name: Build and Deploy
+        uses: facebook/docusaurus-github-action@v1
+        with:
+          build-dir: build
+          github-token: ${{ secrets.GITHUB_TOKEN }}
