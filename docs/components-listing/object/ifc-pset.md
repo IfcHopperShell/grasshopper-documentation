@@ -7,7 +7,7 @@ sidebar_label: Ifc Pset
 Create a Pset and assign it to an IFC Object.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/IfcHopperShell/grasshopper-documentation/refs/heads/gh-pages/img/ifc_pset.png" />
+  <img src="https://raw.githubusercontent.com/IfcHopperShell/grasshopper-documentation/refs/heads/gh-pages/img/ifc_pset.PNG" />
 </p>
 
 ## Input

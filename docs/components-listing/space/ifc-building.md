@@ -7,7 +7,7 @@ sidebar_label: Ifc Building
 Create an IFC Building.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/IfcHopperShell/grasshopper-documentation/refs/heads/gh-pages/img/ifc_building.png" />
+  <img src="https://raw.githubusercontent.com/IfcHopperShell/grasshopper-documentation/refs/heads/gh-pages/img/ifc_building.PNG" />
 </p>
 
 ## Input

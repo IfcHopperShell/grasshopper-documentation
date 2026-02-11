@@ -8,7 +8,7 @@ Create an IFC Project.
 Units are taken from the active Rhino document.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/IfcHopperShell/grasshopper-documentation/refs/heads/gh-pages/img/ifc_project.png" />
+  <img src="https://raw.githubusercontent.com/IfcHopperShell/grasshopper-documentation/refs/heads/gh-pages/img/ifc_project.PNG" />
 </p>
 
 ## Input
