@@ -7,7 +7,7 @@ sidebar_label: Ifc Building Storey
 Create an IFC Building Storey.
 
 <p align="center">
-  <img src="/img/ifc_building_storey.png" />
+  <img src="/grasshopper-documentation/img/ifc_building_storey.png" />
 </p>
 
 ## Input

@@ -7,7 +7,7 @@ sidebar_label: Ifc Write
 Write an IFC file in step format.
 
 <p align="center">
-  <img src="/img/ifc_write.png" />
+  <img src="/grasshopper-documentation/img/ifc_write.png" />
 </p>
 
 ## Input

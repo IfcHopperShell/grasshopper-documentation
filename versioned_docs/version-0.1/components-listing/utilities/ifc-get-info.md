@@ -7,7 +7,7 @@ sidebar_label: Ifc Info
 Get the attributes of an IFC entity from its step id.
 
 <p align="center">
-  <img src="/img/ifc_get_info.png" />
+  <img src="/grasshopper-documentation/img/ifc_get_info.png" />
 </p>
 
 ## Input

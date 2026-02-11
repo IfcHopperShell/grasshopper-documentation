@@ -7,7 +7,7 @@ sidebar_label: Ifc Get Id By Type
 Get all the step ids correspoding to a given type.
 
 <p align="center">
-  <img src="/img/ifc_get_id_by_type.png" />
+  <img src="/grasshopper-documentation/img/ifc_get_id_by_type.png" />
 </p>
 
 ## Input

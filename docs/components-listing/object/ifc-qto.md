@@ -7,7 +7,7 @@ sidebar_label: Ifc Qto
 Create a Qto and assign it to an IFC Object.
 
 <p align="center">
-  <img src="/img/ifc_qto.png" />
+  <img src="/grasshopper-documentation/img/ifc_qto.png" />
 </p>
 
 ## Input

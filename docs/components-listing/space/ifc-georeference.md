@@ -7,7 +7,7 @@ sidebar_label: Ifc Georeference
 Georeference the Ifc Context.
 
 <p align="center">
-  <img src="/img/ifc_georeference.png" />
+  <img src="/grasshopper-documentation/img/ifc_georeference.png" />
 </p>
 
 ## Input

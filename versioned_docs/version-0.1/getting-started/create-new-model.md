@@ -6,12 +6,12 @@ sidebar_label: Create new model
 
 This guide assumes that you know about the IFC standard. If not, you can find informations in the offial documentation [here](https://ifc43-docs.standards.buildingsmart.org/).
 
-You can donwload the sample grassopper definition used in this guide [here](/files/Hopper Script.gh), and the sample output file [here](/files/Hopper File.ifc).
+You can donwload the sample grassopper definition used in this guide [here](/grasshopper-documentation/files/Hopper Script.gh), and the sample output file [here](/grasshopper-documentation/files/Hopper File.ifc).
 
 ## Initialize empy file
 The fisrt step is to create a new empty model with the **Ifc Model** component. Default inputs will result in an IFC4 file. Feed the model to the **Ifc Write** component to save it. By default it is stored in a IfcHopperShell folder in your user directory.
 <p align="center">
-  <img src="/img/create_model_empty.png" />
+  <img src="/grasshopper-documentation/img/create_model_empty.png" />
 </p>
 
 The output file will look like the following. Note that we have an header and a footer part. The rest of the model will be writtent in between.
@@ -32,7 +32,7 @@ END-ISO-10303-21;
 Each IFC file must contain one (and only one) project.
 
 <p align="center">
-  <img src="/img/create_model_project.png" />
+  <img src="/grasshopper-documentation/img/create_model_project.png" />
 </p>
 
 :::note
@@ -71,7 +71,7 @@ The next step down the IFC spatial hierarchy is the site.
 Note that the site requires a *Relating Object Id* input. This is the step id of the project (4 in this case). You can either specify this manually, or get it from the **Ifc Project** component output.
 
 <p align="center">
-  <img src="/img/create_model_site.png" />
+  <img src="/grasshopper-documentation/img/create_model_site.png" />
 </p>
 
 Notice that we get an IFCSITE element called "Hopper Site" and an IFCRELAGGREGATES element which specifies that elment 4 (the project) aggregates element 6 (the site)
@@ -110,7 +110,7 @@ END-ISO-10303-21;
 Next let's add a context (and subcontext), that tells the IFC what kind of content to expect. The context specifies if this is a 3d (Model context) or 2d model (Plan context). The subcontext further specifies the target identifier (body, box, axis, profile, footprint, clearance, annotation) and view (model, plan, elevation, section, graph, sketch).
 
 <p align="center">
-  <img src="/img/create_model_context.png" />
+  <img src="/grasshopper-documentation/img/create_model_context.png" />
 </p>
 
 :::note
@@ -153,7 +153,7 @@ END-ISO-10303-21;
 We can now add an **Ifc Building** to our site.
 
 <p align="center">
-  <img src="/img/create_model_building.png" />
+  <img src="/grasshopper-documentation/img/create_model_building.png" />
 </p>
 
 The building is added to the site with the same relationship that we used between the site and the project.
@@ -196,7 +196,7 @@ END-ISO-10303-21;
 The same again for **Ifc Building Storey**. In this case we want to create two storeys, so we provide a list of two names as input, to get two storeys as output.
 
 <p align="center">
-  <img src="/img/create_model_buildingstorey.png" />
+  <img src="/grasshopper-documentation/img/create_model_buildingstorey.png" />
 </p>
 
 You can see that two building storeys have been added, and they were aggregated to the building.
@@ -242,7 +242,7 @@ END-ISO-10303-21;
 We can prepare a style that will be used to color our objects.
 
 <p align="center">
-  <img src="/img/create_model_style.png" />
+  <img src="/grasshopper-documentation/img/create_model_style.png" />
 </p>
 
 A style basically defines a surface rgb color.
@@ -296,7 +296,7 @@ Note that an object can esist even without geometry assigned to it, cause you ma
 :::
 
 <p align="center">
-  <img src="/img/create_model_object.png" />
+  <img src="/grasshopper-documentation/img/create_model_object.png" />
 </p>
 
 You can see the pbject is defined, aggregated to the building storey, positioned in a certain location with local placement, and assigned a style.
@@ -364,7 +364,7 @@ END-ISO-10303-21;
 We can now add a Pset to our object.
 
 <p align="center">
-  <img src="/img/create_model_pset.png" />
+  <img src="/grasshopper-documentation/img/create_model_pset.png" />
 </p>
 
 A Pset is a collection of properties. Properties are key, value pairs.
@@ -437,7 +437,7 @@ END-ISO-10303-21;
 We can now add a Qto to our object.
 
 <p align="center">
-  <img src="/img/create_model_qto.png" />
+  <img src="/grasshopper-documentation/img/create_model_qto.png" />
 </p>
 
 A Qto is a collection of quantities. Quantities are key, value pairs with a measurement unit.
