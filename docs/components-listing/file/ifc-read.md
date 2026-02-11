@@ -7,7 +7,7 @@ sidebar_label: Ifc Read
 Reads an IFC file.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/IfcHopperShell/grasshopper-documentation/refs/heads/gh-pages/img/ifc_read.PNG" />
+  <img src="https://ifchoppershell.github.io/grasshopper-documentation/img/ifc_read.PNG" />
 </p>
 
 ## Input

@@ -12,7 +12,7 @@ You can donwload the sample grassopper definition used in this guide [here](http
 The fisrt step is to create a new empty model with the **Ifc Model** component. Default inputs will result in an IFC4 file. Feed the model to the **Ifc Write** component to save it. By default it is stored in a IfcHopperShell folder in your user directory.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/IfcHopperShell/grasshopper-documentation/refs/heads/gh-pages/img/create_model_empty.PNG" />
+  <img src="https://ifchoppershell.github.io/grasshopper-documentation/img/create_model_empty.PNG" />
 </p>
 
 The output file will look like the following. Note that we have an header and a footer part. The rest of the model will be writtent in between.
@@ -33,7 +33,7 @@ END-ISO-10303-21;
 Each IFC file must contain one (and only one) project.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/IfcHopperShell/grasshopper-documentation/refs/heads/gh-pages/img/create_model_project.PNG" />
+  <img src="https://ifchoppershell.github.io/grasshopper-documentation/img/create_model_project.PNG" />
 </p>
 
 :::note
@@ -72,7 +72,7 @@ The next step down the IFC spatial hierarchy is the site.
 Note that the site requires a *Relating Object Id* input. This is the step id of the project (4 in this case). You can either specify this manually, or get it from the **Ifc Project** component output.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/IfcHopperShell/grasshopper-documentation/refs/heads/gh-pages/img/create_model_site.PNG" />
+  <img src="https://ifchoppershell.github.io/grasshopper-documentation/img/create_model_site.PNG" />
 </p>
 
 Notice that we get an IFCSITE element called "Hopper Site" and an IFCRELAGGREGATES element which specifies that elment 4 (the project) aggregates element 6 (the site)
@@ -111,7 +111,7 @@ END-ISO-10303-21;
 Next let's add a context (and subcontext), that tells the IFC what kind of content to expect. The context specifies if this is a 3d (Model context) or 2d model (Plan context). The subcontext further specifies the target identifier (body, box, axis, profile, footprint, clearance, annotation) and view (model, plan, elevation, section, graph, sketch).
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/IfcHopperShell/grasshopper-documentation/refs/heads/gh-pages/img/create_model_context.PNG" />
+  <img src="https://ifchoppershell.github.io/grasshopper-documentation/img/create_model_context.PNG" />
 </p>
 
 :::note
@@ -154,7 +154,7 @@ END-ISO-10303-21;
 We can now add an **Ifc Building** to our site.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/IfcHopperShell/grasshopper-documentation/refs/heads/gh-pages/img/create_model_building.PNG" />
+  <img src="https://ifchoppershell.github.io/grasshopper-documentation/img/create_model_building.PNG" />
 </p>
 
 The building is added to the site with the same relationship that we used between the site and the project.
@@ -197,7 +197,7 @@ END-ISO-10303-21;
 The same again for **Ifc Building Storey**. In this case we want to create two storeys, so we provide a list of two names as input, to get two storeys as output.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/IfcHopperShell/grasshopper-documentation/refs/heads/gh-pages/img/create_model_buildingstorey.PNG" />
+  <img src="https://ifchoppershell.github.io/grasshopper-documentation/img/create_model_buildingstorey.PNG" />
 </p>
 
 You can see that two building storeys have been added, and they were aggregated to the building.
@@ -243,7 +243,7 @@ END-ISO-10303-21;
 We can prepare a style that will be used to color our objects.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/IfcHopperShell/grasshopper-documentation/refs/heads/gh-pages/img/create_model_style.PNG" />
+  <img src="https://ifchoppershell.github.io/grasshopper-documentation/img/create_model_style.PNG" />
 </p>
 
 A style basically defines a surface rgb color.
@@ -297,7 +297,7 @@ Note that an object can esist even without geometry assigned to it, cause you ma
 :::
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/IfcHopperShell/grasshopper-documentation/refs/heads/gh-pages/img/create_model_object.PNG" />
+  <img src="https://ifchoppershell.github.io/grasshopper-documentation/img/create_model_object.PNG" />
 </p>
 
 You can see the pbject is defined, aggregated to the building storey, positioned in a certain location with local placement, and assigned a style.
@@ -365,7 +365,7 @@ END-ISO-10303-21;
 We can now add a Pset to our object.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/IfcHopperShell/grasshopper-documentation/refs/heads/gh-pages/img/create_model_pset.PNG" />
+  <img src="https://ifchoppershell.github.io/grasshopper-documentation/img/create_model_pset.PNG" />
 </p>
 
 A Pset is a collection of properties. Properties are key, value pairs.
@@ -438,7 +438,7 @@ END-ISO-10303-21;
 We can now add a Qto to our object.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/IfcHopperShell/grasshopper-documentation/refs/heads/gh-pages/img/create_model_qto.PNG" />
+  <img src="https://ifchoppershell.github.io/grasshopper-documentation/img/create_model_qto.PNG" />
 </p>
 
 A Qto is a collection of quantities. Quantities are key, value pairs with a measurement unit.

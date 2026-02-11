@@ -7,7 +7,7 @@ sidebar_label: Ifc Model
 Create empty IfcOpenShell model.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/IfcHopperShell/grasshopper-documentation/refs/heads/gh-pages/img/ifc_model.PNG" />
+  <img src="https://ifchoppershell.github.io/grasshopper-documentation/img/ifc_model.PNG" />
 </p>
 
 ## Input

@@ -7,7 +7,7 @@ sidebar_label: Ifc Get Mesh
 Get all geometries of the Model as meshes, with relative colors, ids, psets and qtos.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/IfcHopperShell/grasshopper-documentation/refs/heads/gh-pages/img/ifc_get_mesh.PNG" />
+  <img src="https://ifchoppershell.github.io/grasshopper-documentation/img/ifc_get_mesh.PNG" />
 </p>
 
 ## Input
