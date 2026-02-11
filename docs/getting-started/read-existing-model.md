@@ -6,7 +6,7 @@ sidebar_label: Read existing model
 
 This guide assumes that you know about the IFC standard. If not, you can find informations in the offial documentation [here](https://ifc43-docs.standards.buildingsmart.org/).
 
-The sample model shown is avalable at https://github.com/jakob-beetz/DataSetSchependomlaan/.
+The sample model shown is avalable at [here](https://github.com/jakob-beetz/DataSetSchependomlaan/).
 
 ## Read model
 Open existing model, creating a model instance and getting the version.
