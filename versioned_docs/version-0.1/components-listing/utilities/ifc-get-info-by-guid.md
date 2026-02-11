@@ -7,7 +7,7 @@ sidebar_label: Ifc Get Info By Guid
 Get the attributes of an IFC entity from its guid.
 
 <p align="center">
-  <img src="/grasshopper-documentation/img/ifc_get_info_by_guid.png" />
+  <img src="https://ifchoppershell.github.io/grasshopper-documentation/img/ifc_get_info_by_guid.png" />
 </p>
 
 ## Input

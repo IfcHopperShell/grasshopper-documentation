@@ -7,7 +7,7 @@ sidebar_label: Ifc Context
 Create an IFC Context (or subcontext).
 
 <p align="center">
-  <img src="/grasshopper-documentation/img/ifc_context.png" />
+  <img src="https://ifchoppershell.github.io/grasshopper-documentation/img/ifc_context.png" />
 </p>
 
 ## Input
