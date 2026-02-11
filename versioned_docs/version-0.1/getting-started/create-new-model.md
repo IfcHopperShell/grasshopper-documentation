@@ -11,7 +11,7 @@ You can donwload the sample grassopper definition used in this guide [here](http
 ## Initialize empy file
 The fisrt step is to create a new empty model with the **Ifc Model** component. Default inputs will result in an IFC4 file. Feed the model to the **Ifc Write** component to save it. By default it is stored in a IfcHopperShell folder in your user directory.
 :::center
-![Create Model Empty](/img/create_model_empty.png)
+![Create Model Empty](pathname:///img/create_model_empty.png)
 :::
 
 The output file will look like the following. Note that we have an header and a footer part. The rest of the model will be writtent in between.
