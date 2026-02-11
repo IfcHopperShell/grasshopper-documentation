@@ -2,7 +2,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [main] # Change this if your default branch is different
+    branches: [main]
 
 permissions:
   contents: write
@@ -14,16 +14,22 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
+
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: yarn # or npm/pnpm
+          cache: 'npm' # Change to 'yarn' if you use yarn
 
       - name: Install dependencies
-        run: yarn install --frozen-lockfile
-      
-      - name: Build and Deploy
-        uses: facebook/docusaurus-github-action@v1
+        run: npm install # Change to 'yarn install --frozen-lockfile' if using yarn
+
+      - name: Build website
+        run: npm run build # Change to 'yarn build' if using yarn
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
         with:
-          build-dir: build
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
