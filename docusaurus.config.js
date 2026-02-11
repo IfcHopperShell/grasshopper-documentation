@@ -52,7 +52,7 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          includeCurrentVersion: true,
+          includeCurrentVersion: false,
           versions: {
             '0.1': {
               label: 'v0.1', // This changes the UI text to "v0.1"
