@@ -1,0 +1,9 @@
+{
+  "label": "Object",
+  "position": 3,
+  "collapsed": true,
+  "link": {
+    "type": "generated-index",
+    "description": "The list of all the coponents with inputs and outputs."
+  }
+}
